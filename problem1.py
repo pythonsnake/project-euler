@@ -14,3 +14,4 @@ while number<=1000:
 print "Result :", sum
 
 #Solved
+
