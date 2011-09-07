@@ -7,16 +7,11 @@ Find the largest palindrome made from the product of two 3-digit numbers.
 """
 def isPalindromic(number):
     number=str(number)
-    a=number[0:len(number)/2]
-    if len(number)%2==0 and a==number[len(number)/2:len(number)][::-1]:
-        return True
-    elif len(number)%2!=0 and a==number[len(number)/2+1:len(number)][::-1]:
-        return True
-    return False
+    return number==number[::-1]
 
-#test
-print "3456543 is palindromic ?", isPalindromic(3456543)
-print "2442 is palindromic ?", isPalindromic(2442)
-print "2343 is palindromic ?", isPalindromic(2343)
-
+results=[]
+for x in range(100*100, 999*999):
+        if isPalindromic(x) is True:
+            results.append(x)
+print max(results)
 #Solved
