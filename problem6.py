@@ -6,6 +6,7 @@ The square of the sum of the first ten natural numbers is,
 Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025-385=2640.
 Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
 """
+
 result1, result2, y, s = 0, 0, 0, []
 
 for i in range(101): s.append(i**2)
