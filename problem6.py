@@ -13,6 +13,6 @@ for i in range(101): s.append(i**2)
 for r in s: result2+=r
 for x in range(101): result1=result1+x
 
-print result2-result1
+print result2-result1**2
 
 #Solved
